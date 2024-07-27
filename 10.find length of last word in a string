@@ -1,0 +1,5 @@
+string = "python is too hard"
+words = string.split()
+last_word = words[-1]
+length = len(last_word)
+print("Length of the last word:", length)
