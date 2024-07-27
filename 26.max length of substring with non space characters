@@ -1,0 +1,4 @@
+s = "Hello hi"
+words = s.split()
+last_word = words[-1] if words else ''
+print(len(last_word)) 

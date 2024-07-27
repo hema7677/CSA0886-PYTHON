@@ -1,0 +1,9 @@
+word = "USA"
+if word.upper() == word:
+    print(True)
+elif word.lower() == word:
+    print(True) 
+elif word[0].upper() == word[0] and word[1:].lower() == word[1:]:
+    print(True)
+else:
+    print(False)

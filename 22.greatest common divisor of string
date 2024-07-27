@@ -1,0 +1,12 @@
+str1="ABABAB"
+str2="ABAB"
+if str1+str2==str2+str1:
+    a=len(str1)
+    b=len(str2)
+    while b:
+        a,b=b,a % b    
+    gcd_length=a
+    result=str1[:gcd_length]
+else:
+    result=""
+print(result)
