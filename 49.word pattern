@@ -1,0 +1,11 @@
+pattern = "abba"
+s = "dog cat cat dog"
+words = s.split()
+if len(pattern) != len(words):
+    print(False)
+else:
+    p_to_w, w_to_p = {}, {}
+    
+    result = all(p_to_w.setdefault(p, w) == w and w_to_p.setdefault(w, p) == p
+                 for p, w in zip(pattern, words))
+    print(result)

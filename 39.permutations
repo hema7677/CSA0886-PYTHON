@@ -1,0 +1,6 @@
+from itertools import permutations
+given_number = "143"
+perms = set(permutations(given_number))
+print("Permutations are:")
+for perm in perms:
+    print(''.join(perm))

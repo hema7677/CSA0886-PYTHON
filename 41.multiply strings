@@ -1,0 +1,6 @@
+num1 = "2"
+num2 = "3"
+result = 0
+result = int(num1) * int(num2)
+result_str = str(result)
+print(result_str)

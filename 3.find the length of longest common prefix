@@ -1,0 +1,12 @@
+#3.find the length of longest common prefix
+strs=["flower","flow","flight"]
+if not str:
+    print("")
+prefix=strs[0]
+for string in strs[1:]:
+    while string[:len(prefix)]!=prefix:
+        prefix=prefix[:-1]
+        if not prefix:
+            print("")
+            break
+print(prefix)
